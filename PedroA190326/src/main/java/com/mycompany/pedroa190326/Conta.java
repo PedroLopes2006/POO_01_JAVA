@@ -27,8 +27,10 @@ public class Conta {
         saldo += valor;
     }
     
+    
     public boolean sacar(double valor){
         if(valor <= saldo){
+            saldo -= valor;
             System.out.println("Transação Aprovada");
             return true;
         }
